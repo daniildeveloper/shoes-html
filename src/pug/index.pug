@@ -1,0 +1,173 @@
+extends layouts/layout.pug
+
+block page-title
+  | Главная
+
+block content
+  main
+    #banner
+      ul.slides
+        li.slide.futs
+          section.annonce
+            p.price
+              | $ 145.99
+              h2
+                | pink shoes 2013 collection
+              p
+                | Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget
+              ul.share-icons
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-comment
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-star-empty
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-share
+                li
+                  a(href='#').green
+                    span.glyphicon.glyphicon-shopping-cart
+
+    //- sales
+    #sales
+      ul
+        li.on-sale
+          h4.text-uppercase
+            | on sale
+        li.special-offers
+          h4.text-uppercase
+            | special offers
+        li.must-have
+          h4.text-uppercase
+            | must have
+    //- end sales
+
+    #shop-items
+      #sales
+        h3
+          | New arriavals on FooseShoes
+        ul.shop-items
+          li.shop-item
+            img(src='#')
+            div.item-data
+              section.price
+                | $145.99
+              section.title
+                | Even&Odd
+          li.shop-item
+            section.price
+              | price
+            img(src='#')
+            div.item-data
+              section.price
+                | $145.99
+              section.title
+                | Even&Odd
+          li.shop-item
+            img(src='#')
+            div.item-data
+              section.price
+                | $145.99
+              section.title
+                | Even&Odd
+      #bestsellers
+        h3
+          | Best sellers on the month
+        ul.shop-items
+          li.shop-item
+            img(src='#')
+            div.item-data
+              section.price
+                | $145.99
+              ul.share-icons
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-comment
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-star-empty
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-share
+                li
+                  a(href='#').green
+                    span.glyphicon.glyphicon-shopping-cart
+          li.shop-item
+            section.price
+              | price
+            img(src='#')
+            div.item-data
+              section.price
+                | $145.99
+              ul.share-icons
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-comment
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-star-empty
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-share
+                li
+                  a(href='#').green
+                    span.glyphicon.glyphicon-shopping-cart
+          li.shop-item
+            img(src='#')
+            div.item-data
+              section.price
+                | $145.99
+              ul.share-icons
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-comment
+
+
+
+
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-star-empty
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-share
+                li
+                  a(href='#').green
+                    span.glyphicon.glyphicon-shopping-cart
+
+      //- info
+      #info
+        section.freeshipping
+          h3
+            | Free shipping
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        section.testimonials
+          h3
+            | Testimonials
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        section.news#news
+          h3
+            | blog news
+          ul
+            li
+              div.date
+                p apr
+                p 01
+              div.news-content
+                h4
+                  | Nice & clean. The best for you blog!
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            li
+              div.date
+                p apr
+                p 01
+              div.news-content
+                h4
+                  | Nice & clean. The best for you blog!
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      //- end info
