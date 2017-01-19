@@ -1,0 +1,107 @@
+header.header {
+    .header-top {
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+        align-content: center;
+        justify-content: space-around;
+        background: @black;
+        // height: 45px;
+        .nav-left {
+            float: left;
+            .brand {
+                a {
+                    padding: 9px 0;
+                    color: @green;
+                    text-transform: uppercase;
+                    font-size: 28px;
+                    line-height: 1.8em;
+                    font-family: 'Hind-Light';
+                }
+            }
+        }
+        .nav-right {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            &:hover {
+                .input {
+                    border-bottom: 1px solid @green;
+                }
+            }
+            .search {
+                input {
+                    background: @black;
+                    border: none;
+                    color: @green;
+                    font-size: 14px;
+                    outline: none;
+                    border-bottom: 1px solid @black;
+                    &:focus, &:hover, &:target {
+                        border-bottom: 1px solid @green;
+                    }
+                }
+                span {
+                    color: @gray;
+                }
+            }
+            .login {
+                margin: 0 0 0 34px;
+                color: @text-gray;
+                background: @gray;
+                height: 50px;
+                div {
+                    padding: 12px 11px;
+                }
+                span {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .header-bottom {
+        background: #fff;
+        nav {
+            // margin-left: 190px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: space-between;
+            justify-content: space-around;
+            .menu-navigation {
+                li {
+                    display: inline-block;
+                    padding: 15px;
+                    background: @gray;
+                    &:hover, a:hover {
+                        background: #fff;
+                    }
+                    a {
+                        color: @black;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .cart {
+            li {
+                display: inline-block;
+                padding: 15px;
+                background: @gray;
+                margin-right: 1px;
+                &:hover {
+                    background: #fff;
+                }
+                span.glyphicon {
+                    color: @black;
+                }
+                .green-bg {
+                  background: @green;
+                }
+            }
+        }
+    }
+}

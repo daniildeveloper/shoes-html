@@ -27,21 +27,20 @@ html
       });
       });
   body
-    .header
+    header.header
       .header-top
         .nav-left
           .brand
             a(href='/')
               | fooseshoes
         .nav-right
-          div
+          div.search
             input(type='text')
             span.glyphicon.glyphicon-search
           div.login
-            span login 
-            | or
-            span 
-            |  register
-
-
-      include navigation-menu.pug
+            div
+              span login 
+              | or
+              span  register
+      .header-bottom
+        include navigation-menu.pug
