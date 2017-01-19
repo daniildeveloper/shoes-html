@@ -1,0 +1,44 @@
+#banner {
+    ul.slides {
+        li.slide.futs {
+            background-image: url('../img/slider-futs.png');
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .annonce {
+                width: 25%;
+                position: absolute;
+                right: 150px;
+                margin-top: 80px;
+                h2 {
+                    text-transform: capitalize;
+                }
+                .price {
+                    color: #fff;
+                    background: @green;
+                    max-width: 70px;
+                    padding: 15px 7px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                }
+                .share-icons {
+                  li {
+                    display: inline-block;
+                    list-style-type: none;
+                    padding: 7px;
+                    color: @black;
+                    background: #fff;
+                    margin-right: 1px;
+                    a {
+                      margin:5px 5px 5px 5px;
+                      line-height: 1em;
+                      &:hover {
+                        color: @green;
+                      }
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
