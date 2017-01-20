@@ -33,18 +33,27 @@ block content
     #sales
       ul
         li.on-sale
-          h4.text-uppercase
-            | on sale
+          a(href='#')
+            h4.text-uppercase
+              | on sale
+          img(src='img/on-sale.png')
+          
         li.special-offers
-          h4.text-uppercase
-            | special offers
+          a(href='#')
+            h4.text-uppercase
+              | special offers
+          img(src='img/special-offer.png')
+          
         li.must-have
-          h4.text-uppercase
-            | must have
+          a(href='#')
+            h4.text-uppercase
+              | must have
+          img(src='img/must-have.png')
+          
     //- end sales
 
     #shop-items
-      #sales
+      #sales-shop-items
         h3
           | New arriavals on FooseShoes
         ul.shop-items
